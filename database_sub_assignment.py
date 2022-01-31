@@ -16,7 +16,13 @@ conn.close()
 conn = sqlite3.connect('assignment.db')
 
 for x in fileList:
-    print(fileList.endswith('txt'))
+    if x.endswith('txt'):
+        with conn:
+            cur = conn.cursor()
+            cur.execute("INSERT INTO tbl_assignment (col_num1) VALUES (?)", (x,))
+            print(x)
+
+conn.close()
 
 
     
