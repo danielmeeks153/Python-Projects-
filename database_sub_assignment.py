@@ -16,7 +16,7 @@ conn.close()
 conn = sqlite3.connect('assignment.db')
 
 for x in fileList:
-    print(fileList.endswith('txt')
+    print(fileList.endswith('txt'))
 
 
     
