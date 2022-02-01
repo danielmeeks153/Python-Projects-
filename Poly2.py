@@ -13,7 +13,7 @@ class Bird:
 class parrot(Bird):
     Flight = True
     Climate = "Warm"
-    Color = "Green"
+    Talking = True 
     def flight(self):
        print("Parrots can fly")
  
@@ -21,7 +21,7 @@ class parrot(Bird):
 class penguin(Bird):
     Flight = False
     Climate = "Cold"
-    Color = "Black and White"
+    Number_of_Mates = 1
     def flight(self):
        print("Penguins do not fly")
  
