@@ -6,7 +6,7 @@ class Counter:
         self__current += 1
 
     def value(self):
-        return self._current
+        return self.__current
 
     def reset(self):
         self.__current = 0 
